@@ -1,0 +1,22 @@
+{
+  "name": "nodejs_study-task_tracker",
+  "version": "1.0.0",
+  "description": "Solve https://roadmap.sh/projects/task-tracker with node.js + typescript + vs code.",
+  "main": "index.ts",
+  "repository": "https://github.com/lybs3983/nodejs_study-task_tracker.git",
+  "author": "lybs3983@163.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist"
+  },
+  "bin": {
+    "task-cli": "dist/index.js"
+  }
+}
